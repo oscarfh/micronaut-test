@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: micronaut-test
+  http:
+    client:
+      read-timeout: 500s
+    services:
+      my-declarative-client:
+        urls:
+          - http://localhost:8090
+        path: /my-declarative-client-path
